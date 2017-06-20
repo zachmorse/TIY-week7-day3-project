@@ -15,6 +15,13 @@ app.get("/", function(req, res) {
 
 app.use(express.static("views"));
 
+app.get("/:id", function(req, res) {
+  var index = req.params.id;
+  res.render("details", { userListing: data.users[index] });
+});
+
+app.use(express.static("views"));
+
 app.listen(port, function() {
   console.log("Server is running on port " + port);
 });

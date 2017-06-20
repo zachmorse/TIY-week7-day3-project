@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Profile Listing</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+		{{#userListing}}
+		<div class="profile">
+			<img src={{avatar}}>
+			<h3>{{name}}</h3>
+			<p class="job">
+				{{#job}} {{job}} {{company}} {{/job}} {{^job}}
+				<h4 class="jobless"> Available for hire. </h4> {{/job}}
+			</p>
+		</div>
+		{{/userListing}}
+	</div>
+
+</body>
+
+</html>
