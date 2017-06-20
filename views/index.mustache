@@ -9,21 +9,21 @@
 </head>
 
 <body>
-	<div class="containerBox">
+
+
+	<div class="singleProfileContainer">
 		{{#userListing}}
-		<div class="profilePic">
+		<div class="profile">
 			<img src={{avatar}}>
+			<h3>{{name}}</h3>
+			<p class="job">
+				{{#job}} {{job}} {{company}} {{/job}} {{^job}}
+				<h4 class="jobless"> Available for hire. </h4> {{/job}}
+			</p>
 		</div>
-		<h3>{{name}}</h3>
-		<p class="job">
-			{{#job}} {{job}} {{company}} {{/job}} {{^job}} Available for hire. {{/job}}
-		</p>
 		{{/userListing}}
-
-
-
-
 	</div>
+
 </body>
 
 </html>
