@@ -1,12 +1,11 @@
 body {
-  background-color: pink;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
 
-.wrapper {
+.singleProfileContainer {
   display: flex;
   margin: 1rem;
   flex-wrap: wrap;
@@ -21,4 +20,13 @@ body {
   margin: 10px;
   padding: 10px;
   text-align: center;
+  color: #347dcb;
+}
+
+.job {
+  color: #94797a;
+}
+
+.jobless {
+  color: #d1728a;
 }
