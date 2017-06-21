@@ -8,18 +8,17 @@
 	<link href="main.css" rel="stylesheet">
 </head>
 
-<body>
-
-
+<body class="details-body">
+	<h1 class="page-headline">Profile Details</h1>
 	<div class="wrapper">
 		{{#userListing}}
-		<div class="profile">
-			<img src={{avatar}}>
+		<div class="-single-profile">
+			<img class="single-profile-pic" src={{avatar}}>
 			<h3>{{name}}</h3>
-			<p class="job">
-				{{#job}} {{job}} {{company}} {{/job}} {{^job}}
+			
+			</p><p class="job">
+				{{#job}} {{job}}, {{company}} {{/job}} {{^job}}
 				<h4 class="jobless"> Available for hire. </h4> {{/job}}
-			</p>
 		</div>
 		{{/userListing}}
 	</div>

@@ -1,24 +1,33 @@
-body {
+.main-body {
   margin: 0;
   padding: 0;
-  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.page-headline {
   justify-content: center;
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem 0rem -2rem 0rem;
+  color: #347dcb;
 }
 
 .singleProfileContainer {
   display: flex;
-  margin: 1rem;
+  margin: 4rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .profile {
-  border: 1px solid gray;
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 2px 1px grey;
   border-radius: 2px;
-  height: 275px;
+  height: 265px;
   width: 180px;
-  margin: 10px;
-  padding: 10px;
+  margin: 7px;
+  padding: 5px;
   text-align: center;
   color: #347dcb;
 }
@@ -29,4 +38,38 @@ body {
 
 .jobless {
   color: #d1728a;
+}
+
+/*---Details page below:---*/
+
+.details-body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 4rem 16rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.single-profile-pic {
+  border: 1px solid lightgrey;
+  height: 200px;
+  border-radius: 150px;
+}
+
+.profile {
+  border: 1px solid transparent;
+  box-shadow: 0px 1px 2px 1px grey;
+  border-radius: 2px;
+  height: 265px;
+  width: 180px;
+  margin: 7px;
+  padding: 5px;
+  text-align: center;
+  color: #347dcb;
 }
