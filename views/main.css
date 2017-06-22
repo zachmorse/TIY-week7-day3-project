@@ -62,18 +62,67 @@ a:link {
   color: #347dcb;
 }
 
+.info-container {
+  /* container for pic and name/info */
+  display: flex;
+  flex-direction: row;
+  height: 175px;
+  padding: 5px;
+  color: #84857f;
+}
+
+.pic-wrapper {
+  flex: 1;
+}
+
+.info-wrapper {
+  flex: 3;
+  padding: 0rem 1rem;
+  color: #84857f;
+}
+
+.name-detail {
+  padding: 0;
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 100;
+  color: black;
+}
+
 .wrapper {
   display: flex;
   margin: 4rem 24rem;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid purple;
 }
 
 .single-profile-pic {
   border: 1px solid lightgrey;
-  height: 200px;
+  height: 175px;
   border-radius: 150px;
   float: left;
+}
+
+.left-bottom-wrapper {
+  flex: 1;
+  text-align: right;
+}
+
+.right-bottom-wrapper {
+  flex: 3;
+  padding: 0rem 0rem 0rem 2.5rem;
+}
+
+.availability {
+  color: #e3a680;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillset {
+  color: #84857f;
 }

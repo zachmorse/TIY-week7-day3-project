@@ -17,16 +17,46 @@
 
 	<div class="wrapper">
 		{{#userListing}}
-		<div class="picAndInfo">
-			<img class="single-profile-pic" src={{avatar}}>
-			<h2>{{name}}</h2>
-
+		
+		<div class="info-container">		
+			<div class="pic-wrapper">
+				<img class="single-profile-pic" src={{avatar}}>
+			</div>
+			<div class="info-wrapper">
+				<h2 class="name-detail">{{name}}</h2>
+				<h4 class="location">
+					{{#address.city}} {{address.city}}, {{/address.city}} {{^address.city}} {{/address.city}} {{address.country}} | 
+					{{#job}} {{job}}, {{company}} {{/job}} {{^job}} <span class="availability">Available for hire.</span> {{/job}}
+				</h4>
+				<h4 class="contact-info">{{email}} | {{phone}}</h4>
+			</div>
 		</div>
-	</div>	
+		
+		<div class="info-container">
+			<div class="left-bottom-wrapper">
+				{{#university}} <h4>Education</h4> {{/university}} {{^university}} {{/university}}
+				<h4>Skills</h4>
+			</div>
+			<div class="right-bottom-wrapper">
+				<h4>{{university}}</h4>
+				<ul>
+					{{#skills}}
+						<li><span class="skillset">{{.}}</span></li>
+					{{/skills}}
+				</ul>
+				
+			</div>
+		</div>
 	
 	{{/userListing}}
-	</div>
+	</div>	
 
+	
+	
+	
+	
+	
+	
 </body>
 
 </html>
