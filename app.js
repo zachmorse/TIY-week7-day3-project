@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const data = require("./data.js");
 const port = 8000;
+var exampleIndex;
 
 const mustacheExpress = require("mustache-express");
 
@@ -16,8 +17,9 @@ app.get("/", function(req, res) {
 app.use(express.static("views"));
 
 app.get("/:id", function(req, res) {
-  var index = req.params.id;
+  var index = req.params.id - 1;
   res.render("details", { userListing: data.users[index] });
+  console.log(data.users[index]);
 });
 
 app.use(express.static("views"));

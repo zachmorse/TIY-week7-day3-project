@@ -20,6 +20,10 @@
   justify-content: center;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .profile {
   border: 1px solid transparent;
   box-shadow: 0px 1px 2px 1px grey;
@@ -34,6 +38,7 @@
 
 .job {
   color: #94797a;
+  text-decoration: none;
 }
 
 .jobless {
@@ -49,27 +54,26 @@
   font-size: 15px;
 }
 
+.profile-page-headline {
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem 0rem -1rem 0rem;
+  color: #347dcb;
+}
+
 .wrapper {
   display: flex;
-  margin: 4rem 16rem;
+  margin: 4rem 24rem;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  border: 1px solid purple;
 }
 
 .single-profile-pic {
   border: 1px solid lightgrey;
   height: 200px;
   border-radius: 150px;
-}
-
-.profile {
-  border: 1px solid transparent;
-  box-shadow: 0px 1px 2px 1px grey;
-  border-radius: 2px;
-  height: 265px;
-  width: 180px;
-  margin: 7px;
-  padding: 5px;
-  text-align: center;
-  color: #347dcb;
+  float: left;
 }

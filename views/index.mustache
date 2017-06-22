@@ -11,16 +11,20 @@
 <body class="main-body">
 
 	<h1 class="page-headline">User directory</h1>
+	
+	
 	<div class="singleProfileContainer">
 		{{#userListing}}
-		<div class="profile">
-			<img src={{avatar}}>
-			<h3>{{name}}</h3>
-			<p class="job">
-				{{#job}} {{job}}, {{company}} {{/job}} {{^job}}
-				<h4 class="jobless"> Available for hire! </h4> {{/job}}
-			</p>
-		</div>
+		<a href=./{{id}}>
+			<div class="profile">
+				<img src={{avatar}}>
+				<h3 class="memberName">{{name}}</h3>
+				<p class="job">
+					{{#job}} {{job}}, {{company}} {{/job}} {{^job}}
+					<h4 class="jobless"> Available for hire! </h4> {{/job}}
+				</p>
+			</div>
+		</a>
 		{{/userListing}}
 	</div>
 
