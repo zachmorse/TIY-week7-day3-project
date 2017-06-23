@@ -19,7 +19,6 @@ app.use(express.static("views"));
 app.get("/:id", function(req, res) {
   var index = req.params.id - 1;
   res.render("details", { userListing: data.users[index] });
-  console.log(data.users[index]);
 });
 
 app.use(express.static("views"));
