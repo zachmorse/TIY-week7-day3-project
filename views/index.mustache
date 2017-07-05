@@ -11,8 +11,11 @@
 <body class="main-body">
 
 	<h1 class="page-headline">User directory</h1>
-	<!--<h3 class="employment-status"><a href="/employed">Currently Employed</a><a href="/seekingemployment">Looking for Work</a>-->
-
+	<div class="employment-status">
+		<a href="/" class="employment-links">All Users</a>
+		<a href="/employed" class="employment-links">Currently Employed</a>
+		<a href="/seekingemployment" class="employment-links">Looking for Work</a>
+	</div>
 	<div class="singleProfileContainer">
 		{{#userListing}}
 		<a href=./{{_id}}>

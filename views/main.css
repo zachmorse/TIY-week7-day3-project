@@ -13,9 +13,21 @@
   color: #347dcb;
 }
 
+.employment-status {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+
+.employment-links {
+  margin: 0rem 1rem;
+  font-size: 1.5rem;
+}
+
 .singleProfileContainer {
   display: flex;
-  margin: 4rem;
+  margin: 3rem 4rem 4rem 4rem;
   flex-wrap: wrap;
   justify-content: center;
 }

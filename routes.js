@@ -29,6 +29,24 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/employed", (req, res) => {
+  PROFILEINFO.find({ job: { $nin: [null] } }).toArray((err, foundPeople) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+    res.render("index", { userListing: foundPeople });
+  });
+});
+
+router.get("/seekingemployment", (req, res) => {
+  PROFILEINFO.find({ job: null }).toArray((err, foundPeople) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+    res.render("index", { userListing: foundPeople });
+  });
+});
+
 router.get("/:id", function(req, res) {
   // var index = req.params.id - 1;
   PROFILEINFO.findOne(
